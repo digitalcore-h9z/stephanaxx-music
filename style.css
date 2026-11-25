@@ -1,3 +1,5 @@
+@import url("zodiak.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +13,8 @@
   --primary-lighter: hsl(281 42.1% 85.1%);
   --accent: hsl(147 38.6% 70%);
   --border: hsl(0 0% 43.1%);
+  --primary-shadow: hsl(281 42.1% 85.1% / 0.3);
+  --aceent-shadow: hsl(147 38.6% 70% / 0.3);
 
   /* Space */
   --space4: 4px;
@@ -32,28 +36,33 @@
   --p: clamp(20px, 2vw, 20px);
 }
 
+h1,
+h2 {
+  color: var(--primary);
+}
+
 h1 {
   font-size: var(--h1);
-  font-family: Technor-Bold;
+  font-family: Zodiak-Black;
 }
 h2 {
   font-size: var(--h2);
-  font-family: Technor-Semibold;
+  font-family: Zodiak-Extrabold;
 }
 
 h3 {
   font-size: var(--h3);
-  font-family: Technor-Semibold;
+  font-family: Zodiak-Bold;
 }
 h5 {
   font-size: var(--h5);
-  font-family: Technor-Semibold;
+  font-family: Zodiak-Regular;
 }
-p,
+/* p,
 li {
   font-size: var(--p);
-  /* font-weight: 500; */
-}
+  font-family: Zodiak-Regular;
+} */
 
 /* li {
   font-family: Technor-Medium;
@@ -69,11 +78,12 @@ label {
 p,
 li {
   line-height: 1.6;
+  color: var(--primary-lighter);
 }
 
 a {
   font-size: var(--p);
-  font-family: Technor-Semibold;
+  font-family: Zodiak-Bold;
 }
 
 body {
@@ -137,3 +147,83 @@ nav {
 }
 
 /* Hero Section */
+
+.center {
+  height: 85vh;
+  height: 85dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.center h1 {
+  text-transform: uppercase;
+  text-shadow: 0 2px 2px var(--primary-lighter);
+}
+
+.center h5 {
+  margin-top: var(--space12);
+  order: -1;
+  color: var(--primary-lighter);
+}
+.center p {
+  margin-top: var(--space24);
+}
+
+/* Bottom hero */
+
+.desc {
+  width: 500px;
+}
+
+/* .bottom-hero {
+ margin-left: var(--space24);
+  margin-right: var(--space24); 
+} */
+
+.bottom-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cta-btns a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-weight: 700;
+  border-radius: 2px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.1s ease,
+    color 0.3s ease;
+  z-index: 1;
+}
+
+.contact-btn {
+  margin-left: var(--space12);
+  background-color: var(--accent);
+  color: #000;
+  border: 2px solid var(--accent);
+  box-shadow: 8px 8px 12px 0 var(--aceent-shadow);
+}
+
+.listen-now-btn {
+  border: 2px solid var(--primary);
+  color: var(--primary-lighter);
+  box-shadow: -8px 8px 12px 0 var(--primary-shadow);
+}
+
+.listen-now-btn:hover {
+  background-color: var(--primary);
+  color: #000;
+  transform: scale(1.05) rotate(3deg) translateY(-5px) skewX(2deg);
+}
+
+.contact-btn:hover {
+  background-color: transparent;
+  color: var(--accent);
+  transform: scale(1.05) rotate(-3deg) translateY(-5px) skewX(2deg);
+}
