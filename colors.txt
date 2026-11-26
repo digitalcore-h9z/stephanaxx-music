@@ -1,0 +1,7 @@
+  --background: hsl(0 0% 7.8%);
+  --primary: hsl(284 38.6% 70%);
+  --primary-lighter: hsl(281 42.1% 85.1%);
+  --accent: hsl(147 38.6% 70%);
+  --border: hsl(0 0% 23.1%);
+  --primary-shadow: hsl(281 42.1% 85.1% / 0.3);
+  --aceent-shadow: hsl(147 38.6% 70% / 0.3);
