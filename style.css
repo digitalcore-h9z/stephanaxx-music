@@ -364,6 +364,7 @@ nav {
 
 /* About ME */
 
+/* Global */
 .about-section {
   padding: var(--space96) var(--space24);
 }
@@ -375,6 +376,15 @@ nav {
 .title-desc-about-section p {
   margin-top: var(--space24);
 }
+@media screen and (max-width: 700px) {
+  .title-desc-about-section {
+    margin-left: var(--space12);
+  }
+  .title-desc-about-section p {
+    margin-top: var(--space12);
+  }
+}
+/* Global End */
 
 .about-wrapper {
   margin-top: var(--space64);
@@ -461,6 +471,6 @@ nav {
     height: 24px;
   }
   .links li {
-    margin-right: var(--space12);
+    margin-right: var(--space16);
   }
 }
