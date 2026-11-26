@@ -12,7 +12,7 @@
   --primary: hsl(252 64% 79%);
   --primary-lighter: hsl(252, 64%, 90%);
   --accent: hsl(65 35% 57%);
-  --border: hsl(0 0% 23.1%);
+  --border: hsl(252 20% 23.1%);
   /* --text: hsl(250 100% 100%); */
   --text-muted: hsl(251 33% 75%);
   --primary-shadow: hsl(252 64% 79% / 0.3);
@@ -257,6 +257,13 @@ nav {
   width: 300px;
   height: 370px;
   position: absolute;
+}
+
+.shadow-hero-img {
+  position: absolute;
+  z-index: -1;
+  margin-top: var(--space32);
+  box-shadow: 0 120px 120px 120px var(--aceent-shadow);
 }
 
 .cta-btns a {
