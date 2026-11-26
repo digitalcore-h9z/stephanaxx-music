@@ -29,11 +29,11 @@
   --space128: 128px;
 
   /* Scale */
-  --h1: clamp(40px, 7.6vw, 112px);
-  --h2: clamp(36px, 6.1vw, 84px);
-  --h3: clamp(32px, 4.8vw, 63px);
-  --h5: clamp(25px, 3.1vw, 35px);
-  --p: clamp(20px, 2vw, 20px);
+  --h1: clamp(32px, 7.6vw, 112px);
+  --h2: clamp(28px, 6.1vw, 84px);
+  --h3: clamp(25px, 4.8vw, 63px);
+  --h5: clamp(20px, 3.1vw, 35px);
+  --p: clamp(16px, 2vw, 20px);
 }
 
 h1,
@@ -57,6 +57,10 @@ h3 {
 h5 {
   font-size: var(--h5);
   font-family: Zodiak-Regular;
+}
+
+p {
+  font-size: var(--p);
 }
 /* p,
 li {
@@ -189,8 +193,8 @@ nav {
 /* Hero Section */
 
 .center {
-  height: 85vh;
-  height: 85dvh;
+  height: 80vh;
+  height: 80dvh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -310,5 +314,6 @@ nav {
   }
   .center h5 {
     font-size: 20px;
+    margin-bottom: var(--space24);
   }
 }
