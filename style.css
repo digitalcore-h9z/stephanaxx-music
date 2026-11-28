@@ -337,7 +337,14 @@ nav {
     order: 1;
   } */
   .center {
-    min-height: 60dvh;
+    /* min-height: 60dvh; */
+    min-height: auto;
+  }
+  .hero {
+    padding: var(--space128) 0;
+  }
+  .bottom-hero {
+    margin-top: var(--space32);
   }
 }
 
